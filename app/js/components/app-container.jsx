@@ -1,6 +1,7 @@
 import React from 'react';
 import MenuContainer from './menu-container';
 import DoctorContent from './doctor-content';
+import CommunityContent from './community-content';
 import ChatThread from './chat-thread';
 import appStore from '../stores/appstore';
 import appActions from '../actions/appactions';
@@ -60,6 +61,7 @@ class AppContainer extends React.Component {
 					<MenuContainer ref={ (comp) => this._Menu = comp} toggle={this.state.menuToggle} clickToggle={this.menuToggle.bind(this)} />
 					<div className="app-content">
 						<section className="one-half-m doctor-container">
+							<CommunityContent />
 							<DoctorContent doctor={this.state.doctor} />
 						</section>
 						<section className="one-half-m chat-container">

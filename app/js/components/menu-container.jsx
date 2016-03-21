@@ -7,7 +7,7 @@ function MenuContainer(props) {
 
 	const menuList = [
 		{ text: 'My Profile', url: '/myprofile', icon: 'fa-user' },
-		{ text: 'Share', url: '/share', icon: 'fa-bullhorn' },
+		{ text: 'Community', url: '/community', icon: 'fa-bullhorn' },
 		{ text: 'Appointment', url: 'appointment', icon: 'fa-calendar' },
 		{ text: 'Payment', url: '/payment', icon: 'fa-credit-card' },
 	];

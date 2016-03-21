@@ -2,14 +2,14 @@
 .chat-container{
 	@include rem("padding",0,5);
 	@include rem("margin-top",5);
-	height: $full-height;
+	height: $full-height * .9;
 }
 
 .chat-thread{
 	@extend %section-shadow;
     @include roundedCorners(5);
     background-color: $container-background;
-	height: $full-height / 1.2;
+	height: $full-height * .98;
 	position:relative;
 
 }

@@ -1,0 +1,45 @@
+//community content container styling
+
+.community-section{
+	@extend %section-shadow;
+	@include roundedCorners(5);
+	@include rem("margin-top",5);
+	background-color: $container-background;
+	min-height:50%;
+	text-align:center;
+
+	p{
+		border-top:1px solid $border-gold;
+		@include rem('margin-top',5);
+		@include rem('font-size',17);
+
+		color:black;
+	}
+
+	h4{
+		@include rem("font-size",24);
+		@include rem("padding",7,0);
+	}
+}
+
+.community-button-container{
+	@include rem("padding",15,0);
+}
+
+.community-button{
+	@extend %buttonBasic;
+	@include rem("margin",10,0);
+	@include rem("font-size",18);
+	@include rem("padding",15,70);
+
+	&:hover,&:focus{
+		background-color:#F5C75B;
+		outline:none;
+		color:black;
+	}
+}
+
+.fa-stethoscope{
+	@include rem('font-size',110);
+	color: $border-gold;
+}

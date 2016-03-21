@@ -1,6 +1,8 @@
 //doctor section container styling
 .doctor-container{
 	@include rem("padding",0,5);
+	height:$full-height * .9;
+
 }
 
 .doctor-section{
@@ -8,8 +10,10 @@
 	@include roundedCorners(5);
 	@include rem("margin-top",5);
 	background-color: $container-background;
+	min-height:40%;
 
 	p{
+		@include rem('margin-top',5);
 		@include rem("font-size",20);
 		color:black;	
 		text-align:center;
@@ -25,7 +29,7 @@
 	@include margin-auto();
 	@include roundedCorners(10);
 	display:block;
-	width:100%;
+	width:20%;
 	height:auto;
 
 }
@@ -64,6 +68,9 @@
 }
 
 @include breakpoint($sassySmall){
+	.doctor-container{
+		height:auto;
+	}
 	.doctor-section{
 		display:none;
 	}

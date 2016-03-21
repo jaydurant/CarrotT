@@ -8,7 +8,7 @@ function DoctorContent(props) {
 			</div>
 			<div className="doctor-caption">
 				<p className="full-width-s">
-					{`Hi! I'm ${props.doctor.name}, your Fertility Coach.  I am a specialist in fertility. I'm here to answer your questions about egg freezing or general fertility health.  If you message me, I'll respond within a day, if not sooner. `}
+					{`Hi! I'm ${props.doctor.name}, your Fertility Advisor.  I am a specialist in fertility. I'm here to answer your questions about egg freezing or general fertility health.  If you message me, I'll respond within a day, if not sooner. `}
 				</p>
 				<div>
 					<button className="doctor-button" type="button">Enter Private Chat</button>
